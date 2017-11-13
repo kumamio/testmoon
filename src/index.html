@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Getting Started</title>
+    <script src="./print.bundle.js"></script>
+  </head>
+  <body>
+  		<div class="wrapper">
+		<div id="voice-game"></div>
+		<!-- 弹窗 -->
+		<div class="mask-w mask-login">
+			<div class="mask-c"></div>
+			<div class="mask">
+				<div class="login-txt1"> 您还未登录哦</div>
+				<div class="login-btn J-ping" report-eventid="Babel_dev_adv_Login">去登录</div>
+			</div>
+		</div>
+		<div class="mask-w mask-net">
+			<div class="mask-c"></div>
+			<div class="mask">
+				<div class="login-txt1">网络出了点问题，请尝试重新连接</div>
+				<div class="login-btn">重新连接 </div>
+			</div>
+		</div>
+		<div class="mask-w mask-sucess">
+			<div class="mask-c"></div>
+			<div class="mask">
+				<div class="inner-mask">
+					<div class="square">
+						<div class="sucess-title"></div>
+						<div class="sucess-coupon">
+							<span class="icon">￥</span>
+							<span class="num"></span>
+						</div>
+						<div class="sucess-info">
+						</div>
+					</div>
+				</div>
+				<div class="btns">
+					<span class="gomain J-ping" report-eventid="Babel_dev_adv_CouponGoUrl"></span>
+					<span class="share J-ping" report-eventid="Babel_dev_adv_CouponShare">分享到朋友圈</span>
+				</div>
+			</div>
+		</div>
+		<div class="mask-w mask-fail">
+			<div class="mask-c"></div>
+			<div class="mask">
+				<div class="inner-mask">
+					<div class="square">
+						<div class="sucess-title"></div>
+						<div class="sucess-info"></div>
+					</div>
+				</div>
+				<div class="btns">
+					<span class="gomain J-ping" report-eventid="Babel_dev_adv_FailGoUrl"></span>
+					<span class="share J-ping" report-eventid="Babel_dev_adv_FailShare">分享到朋友圈</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="mask-w mask-voice">
+			<div class="mask-c"></div>
+			<div class="mask">
+				<div class="square">语音包还在路上<br/>要不再试一下</div>
+				<span class="retry-voice"></span>
+			</div>
+		</div>
+		<div class="page-btns">
+			<a href="#none" class="listened J_ping" report-eventid="Babel_dev_adv_Rule"></a>
+		</div>
+	</div>
+  	<script src="./app.bundle.js"></script>
+  </body>
+</html>

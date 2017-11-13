@@ -1,0 +1,492 @@
+/*15:41; user-m_activities/925yueliang index.css Date:2017-09-21 23:05:45 */
+@charset "UTF-8";
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block
+}
+
+body {
+	line-height: 1;
+	color: #333;
+	font-family: SimHei,"Helvetica Neue",Arial,"Droid Sans",sans-serif
+}
+
+input[type=text],textarea {
+	-webkit-appearance: none
+}
+
+input:focus {
+	-webkit-user-modify: read-write-plaintext-only
+}
+
+ol,ul {
+	list-style: none
+}
+
+blockquote,q {
+	quotes: none
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+	content: '';
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+body,html {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
+	width: 100%;
+	font-size: 100px
+}
+
+a,button,input {
+	outline: 0 none;
+	text-decoration: none
+}
+
+img {
+	border: 0 none;
+	vertical-align: bottom;
+	-ms-interpolation-mode: bicubic
+}
+
+.hide {
+	display: none
+}
+
+.fr {
+	float: right
+}
+
+.fl {
+	float: left
+}
+
+.txtc {
+	text-align: center
+}
+
+.clr {
+	clear: both
+}
+
+.wrapper {
+	max-width: 750px;
+	min-width: 320px;
+	font-size: .24rem;
+	overflow: hidden;
+	margin: 0 auto
+}
+
+.noscroll,.noscroll body {
+	overflow: hidden
+}
+
+.noscroll body {
+	position: relative
+}
+
+body,html {
+	height: 100%
+}
+
+body {
+}
+
+.wrapper {
+	height: 100%;
+	position: relative;
+}
+
+.page-cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background: url('/img/cover.png') no-repeat center 0;
+	background-size: cover
+}
+
+.page-cover .people {
+	height: 100%;
+	position: relative
+}
+
+.page-cover .people .voice {
+	width: 3.06rem;
+	height: .96rem;
+	position: absolute;
+	left: 2.36rem;
+	top: 4.26rem;
+	background: url('/img/btn-green.png') no-repeat;
+	background-size: cover
+}
+
+.page-end {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background: url('/img/end.png') no-repeat center 0;
+	background-size: cover
+}
+
+.page-end .people {
+	height: 100%;
+	position: relative
+}
+
+.page-end .people .voice {
+	width: 3.06rem;
+	height: .96rem;
+	position: absolute;
+	left: .5rem;
+	top: 1rem;
+	-webkit-transform-origin: 1 0;
+	transform-origin: 1 0;
+	background: url('/img/btn-green.png') no-repeat;
+	background-size: cover;
+	transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg)
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin:0 0;
+	-webkit-transform-origin:0 0;
+	z-index: 90;
+}
+
+.mask-w {
+	display: none;
+	z-index: 95;
+}
+
+.mask-c {
+	position: fixed;
+	z-index: 96;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.7)
+}
+
+.mask-c-bg {
+	background: url('/img/bg.jpg') repeat;
+	background-size: cover
+}
+
+.mask-login .mask {
+	width: 4.51rem;
+	height: 4.75rem;
+	position: fixed;
+	z-index: 100;
+	left: 50%;
+	top: 50%;
+	margin-left: -2.25rem;
+	margin-top: -2.35rem;
+	background: url('/img/pop4.png') no-repeat 0 0;
+	background-size: cover;
+	text-align: center;
+	color: #fff
+}
+
+.mask-login .mask .login-txt1 {
+	margin-top: 2.5rem;
+	line-height: 1.22rem;
+	font-size: .21rem
+}
+
+.mask-login .mask .login-btn {
+	width: 2.4rem;
+	height: .7rem;
+	margin: .2rem auto .21rem;
+	line-height: .7rem;
+	font-size: .36rem;
+	background: url('/img/net-login.png') no-repeat 0 0;
+	background-size: cover
+}
+
+.mask-login .mask .close {
+	width: .42rem;
+	height: .42rem;
+	display: block;
+	float: right;
+	margin-right: .3rem;
+	margin-top: -2.4rem;
+	background: url('/img/close.png') no-repeat 0 0;
+	background-size: cover
+}
+
+.mask-net .mask {
+	width: 4.51rem;
+	height: 4.75rem;
+	position: fixed;
+	z-index: 100;
+	left: 50%;
+	top: 50%;
+	margin-left: -2.25rem;
+	margin-top: -2.35rem;
+	background: url('/img/pop4.png') no-repeat 0 0;
+	background-size: cover;
+	text-align: center;
+	color: #fff
+}
+
+.mask-net .mask .login-txt1 {
+	margin-top: 2.5rem;
+	line-height: 1.22rem;
+	font-size: .21rem
+}
+
+.mask-net .mask .login-btn {
+	width: 2.4rem;
+	height: .7rem;
+	margin: .2rem auto .21rem;
+	line-height: .7rem;
+	font-size: .36rem;
+	background: url('/img/net-login.png') no-repeat 0 0;
+	background-size: cover
+}
+
+.mask-net .mask .close {
+	width: .42rem;
+	height: .42rem;
+	display: block;
+	position: absolute;
+	top: 2.4rem;
+	right: .3rem;
+	background: url('/img/close.png') no-repeat 0 0;
+	background-size: cover
+}
+
+.mask-sucess .mask{
+	height: 8.59rem;
+	width: 6.35rem;
+	z-index: 100;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -3.17rem;
+	margin-top: -4.29rem;
+}
+.mask-fail .mask{
+	height: 8.12rem;
+}
+
+.mask-w .btns {
+	width: 3.96rem;
+	margin: 0.57rem auto 0;
+	text-align: center;
+	color: #fff
+}
+
+.mask-w .btns .gomain {
+	width: 3.96rem;
+	height: 1.26rem;
+	display: block;
+	background: url('/img/btn.png') no-repeat 0 0;
+	background-size: cover
+}
+
+.mask-w .btns .share {
+	display: none;
+	line-height: .56rem;
+	font-size: .22rem;
+	color: #fff;
+	text-decoration: underline
+}
+
+.mask-sucess .inner-mask{
+	height: 6.69rem;
+	background: url('/img/popup-people.png') no-repeat 0 0;
+	background-size: 100% auto
+}
+.mask-sucess .inner-mask:before{
+	content: '';
+	display: block;
+	height:1px;
+}
+.mask-fail .mask{
+	height: 8.12rem;
+	width: 6.35rem;
+	z-index: 100;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -3.17rem;
+	margin-top: -4.06rem;
+}
+.mask-fail .inner-mask{
+	height: 6.22rem;
+	background: url('/img/popup-people.png') no-repeat 0 0;
+	background-size: 100% auto
+}
+.mask-fail .inner-mask:before{
+	content: '';
+	display: block;
+	height:1px;
+}
+.mask-sucess .mask .square {
+	width: 5.34rem;
+	height: 3.62rem;
+	background: url('/img/pop3.png') no-repeat 0 0;
+	background-size: cover;
+	margin: 3.07rem auto 0;
+	text-align: center;
+	color: #fff
+}
+.mask-fail .mask .square {
+	width: 5.34rem;
+	height: 2.23rem;
+	background: url('/img/pop2.png') no-repeat 0 0;
+	background-size: cover;
+	margin: 3.98rem auto 0;
+	text-align: center;
+	color: #fff
+}
+.mask-sucess .mask .square .sucess-title {
+	padding-top: .78rem;
+	height: 1.47rem;
+	line-height: .69rem;
+	font-size: .324rem
+}
+.mask-sucess .mask .square .sucess-coupon {
+	height: 1.55rem;
+	line-height: 1.52rem
+}
+.mask-sucess .mask .square .sucess-coupon .icon {
+	font-size: .54rem
+}
+.mask-sucess .mask .square .sucess-coupon .num {
+	font-size: 1.35rem;
+	font-family: Impact, Arial;
+}
+.mask-sucess .mask .square .sucess-info {
+	height: .42rem;
+	line-height: .45rem;
+	font-size: .16rem
+}
+.mask-fail .mask .square {
+	width: 5.34rem;
+	height: 2.23rem;
+	background: url('/img/pop2.png') no-repeat 0 0;
+	background-size: cover;
+	margin: 4.07rem auto 0;
+	text-align: center;
+	color: #fff
+}
+.mask-fail .mask .square .sucess-title {
+	clear: both;
+	padding: .19rem 0;
+	height: 1.52rem;
+	line-height: 1.33rem;
+	font-size: .36rem
+}
+.mask-fail .mask .square .sucess-info {
+	height: .42rem;
+	line-height: .45rem;
+	font-size: .16rem
+}
+
+.mask-voice .mask {
+	width: 5.16rem;
+	height: 4.02rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -2.58rem;
+	margin-top: -2.01rem;
+	text-align: center;
+	color: #fff;
+	z-index: 112;
+}
+.mask-voice .square {
+	width: 5.16rem;
+	height: 2.23rem;
+	background: url('/img/pop2.png') no-repeat 0 0;
+	background-size: cover;
+	margin: 0 auto .5rem;
+	text-align: center;
+	color: #fff;
+	line-height: .45rem;
+	font-size: .28rem;
+	padding-top: .6rem;
+}
+.mask-voice .mask .retry-voice {
+	width: 3.96rem;
+	height: 1.15rem;
+	margin: 0 auto;
+	display: block;
+	background: url('/img/retry.png') no-repeat 0 0;
+	background-size: cover
+}
+.page-btns {
+	width: 3.56rem;
+	position: fixed;
+	display: none;
+	bottom: .5rem;
+	left: 50%;
+	margin-left: -1.78rem;
+	text-align: center;
+	color: #fff;
+	z-index: 91;
+}
+
+.page-btns .gomain {
+	width: 3.96rem;
+	height: 1.26rem;
+	display: block;
+	background: url('/img/btn.png') no-repeat 0 0;
+	background-size: cover
+}
+
+.page-btns .share {
+	display: block;
+	line-height: .56rem;
+	font-size: .22rem;
+	color: #fff;
+	text-decoration: underline
+}
+
+.page-btns .listened {
+	width: 3.56rem;
+	height: 1.42rem;
+	display: block;
+	background: url('/img/btn-listened.png') no-repeat 0 0;
+	background-size: cover
+}
+
+.page-btns .btn-inner {
+	display: none
+}
